@@ -1,0 +1,11 @@
+<h1>Test Controller</h1>
+<%= link_to 'Root', root_path %>
+
+<hr />
+
+<h3>People</h3>
+<ul>
+  <% @people.each do |person| %>
+    <li><%= person %></li>
+  <% end %>
+</ul>
