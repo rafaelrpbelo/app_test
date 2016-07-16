@@ -1,0 +1,23 @@
+<h1>File Field</h1>
+<%= link_to 'Root', root_path %>
+
+<hr />
+
+<%= form_for :something do |f| %>
+<div class='file-field'>
+  <div class='file-name'>
+    <%= text_field_tag 'filename', nil, readonly: true %>
+  <div>
+
+  <div class='file-button'>
+    <%= f.file_field :some_file, class: 'inputfile' %>
+    <%= f.label :some_file, icon_text(:search, 'Procurar') %>
+  </div>
+</div>
+
+  <%= f.submit %>
+<% end %>
+
+<script>
+
+</script>
